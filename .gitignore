@@ -1,5 +1,0 @@
-# Ne jamais versionner de secrets ni de sauvegardes de configuration réelles
-.env
-*.key
-*.pem
-sauvegardes/
