@@ -136,7 +136,3 @@ _Lab pas encore réalisé : cette section sera remplie au fur et à mesure._
 ## Feuille de route
 
 Ce lab fait partie de ma [feuille de route réseau](https://github.com/mehdiseg/roadmap-reseau-bts-sio).
-
-## Licence
-
-[MIT](LICENSE)
