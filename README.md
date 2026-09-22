@@ -1,6 +1,8 @@
 # Lab web : reverse proxy nginx avec HTTPS
 
 > **Statut : à réaliser.** Ce guide est préparé à partir de la documentation officielle et de mes cours ; **je ne l'ai pas encore rejoué de bout en bout**. Les commandes sont à valider en le faisant, et le journal en bas de page sera complété avec mes résultats réels (captures, erreurs rencontrées, corrections).
+>
+> **Commandes vérifiées :** ce guide a été rejoué dans des conteneurs Debian 12 et 13 (22 septembre 2026), avec un vrai nginx et des certificats émis par [pki-interne-openssl](https://github.com/mehdiseg/pki-interne-openssl) : `nginx -t` valide la configuration, la redirection HTTP vers HTTPS répond bien 301, la connexion HTTPS avec la CA interne répond 200 et affiche le contenu de l'application derrière le proxy, les trois en-têtes de sécurité sont présents, la limite de débit sur `/connexion` déclenche des réponses 503 après quelques requêtes, et une machine sans la CA installée voit sa connexion refusée. Vérifié ne veut pas dire réalisé : c'est l'assistant IA qui a préparé ce guide qui a rejoué ces commandes dans un conteneur jetable, pas moi sur mon propre lab. Le journal ci-dessous reste à remplir une fois que je l'aurai fait moi-même.
 
 ## Objectif
 
